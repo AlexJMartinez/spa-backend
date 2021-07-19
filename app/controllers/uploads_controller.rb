@@ -15,6 +15,7 @@ class UploadsController < ApplicationController
 
   # POST /uploads
   def create
+    # byebug
     @upload = Upload.new(upload_params)
 
     if @upload.save
@@ -25,18 +26,18 @@ class UploadsController < ApplicationController
   end
 
   # PATCH/PUT /uploads/1
-  def update
-    if @upload.update(upload_params)
-      render json: @upload
-    else
-      render json: @upload.errors, status: :unprocessable_entity
-    end
-  end
+  # def update
+  #   if @upload.update(upload_params)
+  #     render json: @upload
+  #   else
+  #     render json: @upload.errors, status: :unprocessable_entity
+  #   end
+  # end
 
-  # DELETE /uploads/1
-  def destroy
-    @upload.destroy
-  end
+  # # DELETE /uploads/1
+  # def destroy
+  #   @upload.destroy
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
