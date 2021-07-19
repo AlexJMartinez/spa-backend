@@ -1,0 +1,33 @@
+current directory: /Users/alexmartinez/Desktop/React Project SPA/spa-backend/vendor/bundle/ruby/2.6.0/gems/ffi-1.9.18/ext/ffi_c
+/Users/alexmartinez/.rvm/rubies/ruby-2.6.1/bin/ruby -I /Users/alexmartinez/.rvm/rubies/ruby-2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210718-48759-eada8y.rb extconf.rb --enable-system-libffi
+checking for ffi_call() in -lffi... yes
+checking for ffi_prep_closure()... yes
+checking for ffi_raw_call()... yes
+checking for ffi_prep_raw_closure()... yes
+checking for shlwapi.h... no
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_with_gvl()... yes
+checking for rb_thread_call_without_gvl()... yes
+checking for ffi_prep_cif_var()... yes
+creating extconf.h
+creating Makefile
+
+current directory: /Users/alexmartinez/Desktop/React Project SPA/spa-backend/vendor/bundle/ruby/2.6.0/gems/ffi-1.9.18/ext/ffi_c
+make DESTDIR\= clean
+
+current directory: /Users/alexmartinez/Desktop/React Project SPA/spa-backend/vendor/bundle/ruby/2.6.0/gems/ffi-1.9.18/ext/ffi_c
+make DESTDIR\=
+compiling AbstractMemory.c
+compiling ArrayType.c
+compiling Buffer.c
+compiling Call.c
+Call.c:355:5: error: implicit declaration of function 'rb_thread_call_without_gvl' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    rbffi_thread_blocking_region(call_blocking_function, data, (void *) -1, NULL);
+    ^
+./Thread.h:78:39: note: expanded from macro 'rbffi_thread_blocking_region'
+# define rbffi_thread_blocking_region rb_thread_call_without_gvl
+                                      ^
+1 error generated.
+make: *** [Call.o] Error 1
+
+make failed, exit code 2

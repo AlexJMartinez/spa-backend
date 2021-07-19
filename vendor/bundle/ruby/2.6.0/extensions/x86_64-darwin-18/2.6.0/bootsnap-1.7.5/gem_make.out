@@ -1,0 +1,15 @@
+current directory: /Users/alexmartinez/Desktop/React Project SPA/spa-backend/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+/Users/alexmartinez/.rvm/rubies/ruby-2.6.1/bin/ruby -I /Users/alexmartinez/.rvm/rubies/ruby-2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210715-78504-1fd6u6k.rb extconf.rb
+creating Makefile
+
+current directory: /Users/alexmartinez/Desktop/React Project SPA/spa-backend/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/alexmartinez/Desktop/React Project SPA/spa-backend/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/alexmartinez/Desktop/React Project SPA/spa-backend/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20210715-78504-1i032o7/bootsnap
