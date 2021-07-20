@@ -1,5 +1,5 @@
 class UploadsController < ApplicationController
-  before_action :set_upload, only: [:show, :update, :destroy]
+  before_action :set_upload, only: [:show, :update, :likes, :destroy]
 
   # GET /uploads
   def index
@@ -23,6 +23,12 @@ class UploadsController < ApplicationController
     else
       render json: @upload.errors, status: :unprocessable_entity
     end
+  end
+
+  def likes
+    @upload.likes += 1
+    @upload.save 
+    render json: @upload
   end
 
   # PATCH/PUT /uploads/1

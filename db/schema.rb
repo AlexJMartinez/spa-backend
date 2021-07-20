@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_19_034315) do
+ActiveRecord::Schema.define(version: 2021_07_20_184218) do
 
   create_table "uploads", force: :cascade do |t|
     t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "likes", default: 0
   end
 
 end
